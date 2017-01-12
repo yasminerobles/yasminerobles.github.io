@@ -22,6 +22,7 @@ li {color: #333;
 	font-style: italic;
 }
 img {margin: auto;
+	width: 100%;
 }
 #slogan {font-style: italic;
 }
