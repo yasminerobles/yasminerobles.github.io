@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css?family=Merriweather|Nunito+Sans');
+body {background-color: #FFF;
+}
+header {
+	background-color: #FFED74;
+	background-image: url (images/Fish-Tacos-14.jpg);
+	border: 1px black solid;
+	padding: 20px;
+}
+nav {
+	background-color: #E8C66A;
+	border: 1px black solid;
+	padding: 20px;
+}
+article {
+	background-color: #E89C6C;
+	border: 1px black solid;
+	padding: 20px;
+}
+footer {
+	background-color: #FF957E;
+	border: 1px black solid;
+	padding: 20px;
+}
+div {
+	background-color: #FFE2B8;
+	border: 1px black solid;
+	padding: 20px;
+}
+section {
+	background-color: #FFE2B8;
+	border: 1px black solid;
+	padding: 20px;
+}
+#specialnav {
+	width:300px;
+	margin-left: 200px;
+}
+.class {
+	width: 300px;
+	height: 200px;
+	float: left;
+}
+#freebieoffernormal {
+	text-align: center;
+}
+#coursespreview {
+	text-align:center;
+}
+#aboutpreview {
+	text-align: center;
+}
+h1 {color: #FF7C00;
+	font-size: 54px;
+	text-transform: uppercase;
+	font-family: 'Merriweather' 'Georgia', serif;
+}
+h2 {color: #333;
+	font-size: 44px;
+	text-transform: uppercase;
+	font-family: 'Merriweather' 'Georgia', serif;
+}
+h3 {color: #333;
+	font-size: 34px;
+	text-transform: uppercase;
+	font-family: 'Merriweather' 'Georgia', serif;
+}
+p {color: #333;
+	font-size: 14px;
+	font-family: 'Nunito Sans', 'Arial', sans-serif;
+}
+ul {
+}
+li {color: #333;
+	font-style: italic;
+}
+img {margin: auto;
+	width: 100%;
+}
+#slogan {font-style: italic;
+	text-transform: uppercase;
+}
