@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css?family=Merriweather|Nunito+Sans');
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+body {background-color: #FFF;
+}
+header {
+	background-color: #FFED74;
+	background-image: url(../images/Fish-Tacos-14.jpg);
+	background-size: cover;
+	border: 1px black solid;
+}
+nav {
+	background-color: #E8C66A;
+	border: 1px black solid;
+	padding: 10%;
+}
+article {
+	background-color: #E89C6C;
+	border: 1px black solid;
+}
+footer {
+	background-color: #FF957E;
+	border: 1px black solid;
+	padding: 20px;
+}
+div {
+	background-color: #FFE2B8;
+	border: 1px black solid;
+}
+section {
+	background-color: #FFE2B8;
+	border: 1px black solid;
+	padding: 20px;
+}
+#specialnav {
+	width: 25%;
+	margin-left: 10%;
+}
+.class {
+	width: 25%;
+	height: 200px;
+	float: left;
+}
+.clear:after {
+content:"";
+display: block;
+clear: both;
+}
+#freebieoffernormal {
+	text-align: center;
+}
+#freebieoffersmall {
+	text-align: center;
+}
+#coursespreview {
+	text-align:center;
+}
+#aboutpreview {
+	text-align: center;
+}
+h1 {color: #FF7C00;
+	font-size: 54px;
+	text-transform: uppercase;
+	font-family: 'Merriweather' 'Georgia', serif;
+}
+h2 {color: #333;
+	font-size: 44px;
+	text-transform: uppercase;
+	font-family: 'Merriweather' 'Georgia', serif;
+}
+h3 {color: #333;
+	font-size: 34px;
+	text-transform: uppercase;
+	font-family: 'Merriweather' 'Georgia', serif;
+}
+p {color: #333;
+	font-size: 14px;
+	font-family: 'Nunito Sans', 'Arial', sans-serif;
+}
+ul {
+}
+li {color: #333;
+	font-style: italic;
+}
+img {margin: auto;
+	width: 100%;
+}
+#slogan {
+	font-style: italic;
+	text-transform: uppercase;
+}
+#two_column {
+    border: 1px black solid;
+    padding: 20px;
+}
+
+#left {
+    border: 1px black solid;
+    padding: 20px;
+    float: left;
+    width: 50%;
+}
+
+#right {
+    border: 1px black solid;
+    padding: 20px;
+    float: right;
+    width: 50%;
+}
+.clearfix:after {
+    visibility: hidden;
+    display: block;
+    font-size: 0;
+    content: " ";
+    clear: both;
+    height: 0;
+}
