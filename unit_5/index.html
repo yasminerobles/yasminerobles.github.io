@@ -3,12 +3,12 @@
 <head>
 	<title>La Cocina. A Mexican inspired culinary hangout.</title>
 	 <link rel="stylesheet" href="css/style.css">
+	 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	 <script src="js/jquery.sticky.js"></script>
 </head>
 <body>
 <div class="wrapper">
 <header>
-	<section>
-	</section>
 	<section id="specialnav">
 		<h1>LA COCINA</h1>
 		<p id="slogan">Contemporary Mexican Cooking School.</p>
@@ -20,14 +20,16 @@
 			<li>Video Trainings</li>
 			<li>Contact Us</li>
 		</nav>
-		<aside>
+	</section>
+</header>
+<section class="sticky">
+	<aside>
 			<li>Workshops</li>
 			<li>Open Restuarant Days</li>
 			<li>Free Recipes</li>
 			<li>Contact Us</li>
 		</aside>
-	</section>
-</header>
+</section>
 <section id="freebieoffernormal">
 	<h2>Get a free recipe book, today.</h2>
 	<p>Enter your email below.</p>
@@ -35,7 +37,7 @@
 <section id="coursespreview">
 	<h2>Sign up for courses!</h2>
 	<p>Spots fill up fast, so sign up and get cooking.</p>
-	<article>
+	<article class="clear">
 		<div class="class">
 			<h3>TACOS AL PASTOR</h3>
 		</div>
@@ -61,9 +63,20 @@
 	<h2>Sign up for courses!</h2>
 	<p>Spots fill up fast, so sign up and get cooking.</p>
 </section>
-<footer>
-	<p>Contact Us at <a href="mailto:yrobles.1@go.ccad.edu" target="_top">yrobles.1@go.ccad.edu</a>
+<footer id="two_column" class="clearfix">
+	<section id="left">
+		<p>For more information, or to book a corporate team bulding class, contact Us at <a href="mailto:yrobles.1@go.ccad.edu" target="_top">yrobles.1@go.ccad.edu</a>
+	</section>
+	<section id="right">
+		<p>Mention this site and get 20% off your next class ;)</p>
+		<a>BACK TO TOP</a>
+	</section>
 </footer>
 </div>
+<script>
+  $(document).ready(function(){
+    $(".sticky").sticky({topSpacing:0});
+  });
+</script>
 </body>
 </html>
