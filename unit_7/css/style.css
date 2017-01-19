@@ -10,38 +10,66 @@ header {
 	background-color: #FFED74;
 	background-image: url(../images/Fish-Tacos-14.jpg);
 	background-size: cover;
-	border: 1px black solid;
 }
 nav {
-	background-color: #E8C66A;
-	border: 1px black solid;
-	padding: 10%;
+	padding-top: 5%;
+}
+nav a{
+	color: #000;
+	float: none;
 }
 article {
-	background-color: #E89C6C;
-	border: 1px black solid;
 }
 footer {
-	background-color: #FF957E;
-	border: 1px black solid;
-	padding: 20px;
+	background-color: #000;
+	padding: 15%;
+	color: #fff;
+}
+footer p {
+	color: #fff;
 }
 div {
-	background-color: #FFE2B8;
-	border: 1px black solid;
+	background-color: #FFF;
 }
 section {
-	background-color: #FFE2B8;
-	border: 1px black solid;
 	padding: 20px;
 }
+.stickyitem {
+	float: left;
+	padding: 0px 20px 0px 20px;
+	color: #FFF;
+	text-transform: uppercase;
+	font-family: 'Merriweather' 'Georgia', serif;
+	letter-spacing: 1px;
+}
+.sticky {
+	background-color: #000;
+	padding-bottom: 4%;
+	padding-top: 3%;
+}
+#stickynav {
+	margin: 0 auto 0 auto;
+}
 #specialnav {
-	width: 25%;
-	margin-left: 10%;
+	background-color: rgba(255, 255, 255,0.5);
+	width: 40%;
+	font-size: 3em;
+	text-transform: uppercase;
+	padding: 40px;
+}
+.navanchor {
+	clear: both;
 }
 .class {
 	width: 25%;
-	height: 200px;
+	float: left;
+}
+#event {
+	text-align:center;
+	padding: 20% 10% 20% 10%;
+}
+.eachevent {
+	width: 25%;
 	float: left;
 }
 .clear:after {
@@ -57,11 +85,15 @@ clear: both;
 }
 #coursespreview {
 	text-align:center;
+	padding: 20% 10% 20% 10%;
 }
 #aboutpreview {
 	text-align: center;
+	background-image: url(../images/Fish-Tacos-14.jpg);
+	background-size: cover;
+	padding-bottom: 30%;
 }
-h1 {color: #FF7C00;
+h1 {color: #333;
 	font-size: 54px;
 	text-transform: uppercase;
 	font-family: 'Merriweather' 'Georgia', serif;
@@ -81,9 +113,12 @@ p {color: #333;
 	font-family: 'Nunito Sans', 'Arial', sans-serif;
 }
 ul {
+
 }
-li {color: #333;
-	font-style: italic;
+li {
+	color: #333;
+	list-style: none;
+	padding-bottom: 15px;
 }
 img {margin: auto;
 	width: 100%;
