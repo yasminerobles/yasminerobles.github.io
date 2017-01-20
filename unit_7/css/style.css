@@ -17,6 +17,7 @@ nav {
 nav a{
 	color: #000;
 	float: none;
+	display: block;
 }
 article {
 }
@@ -35,7 +36,7 @@ section {
 	padding: 20px;
 }
 .stickyitem {
-	float: left;
+	/* float: left; */
 	padding: 0px 20px 0px 20px;
 	color: #FFF;
 	text-transform: uppercase;
@@ -46,6 +47,7 @@ section {
 	background-color: #000;
 	padding-bottom: 4%;
 	padding-top: 3%;
+	text-align: center;
 }
 #stickynav {
 	margin: 0 auto 0 auto;
@@ -61,8 +63,20 @@ section {
 	clear: both;
 }
 .class {
-	width: 25%;
+	width: 24%;
+	margin: .5%;
 	float: left;
+	/* border: 3px solid; */
+	height: 15em;
+	position: relative;
+	background: purple;
+	color: #fff;
+}
+.class h3 {
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    left: 50%;
 }
 #event {
 	text-align:center;
@@ -91,7 +105,8 @@ clear: both;
 	text-align: center;
 	background-image: url(../images/Fish-Tacos-14.jpg);
 	background-size: cover;
-	padding-bottom: 30%;
+	/* padding-bottom: 30%; */
+	padding: 10em 0;
 }
 h1 {color: #333;
 	font-size: 54px;
