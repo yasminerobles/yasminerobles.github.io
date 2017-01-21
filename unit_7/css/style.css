@@ -35,6 +35,16 @@ div {
 section {
 	padding: 20px;
 }
+#specialnav {
+	background-color: rgba(255, 255, 255,0.5);
+	width: 35%;
+	text-transform: uppercase;
+	/*padding: 40px;*/
+	padding: 2em 1em;
+}
+#specialnav a {
+	font-size: 3em;
+}
 .stickyitem {
 	/* float: left; */
 	padding: 0px 20px 0px 20px;
@@ -45,19 +55,9 @@ section {
 }
 .sticky {
 	background-color: #000;
-	padding-bottom: 4%;
+	padding-bottom: 3%;
 	padding-top: 3%;
 	text-align: center;
-}
-#stickynav {
-	margin: 0 auto 0 auto;
-}
-#specialnav {
-	background-color: rgba(255, 255, 255,0.5);
-	width: 40%;
-	font-size: 3em;
-	text-transform: uppercase;
-	padding: 40px;
 }
 .navanchor {
 	clear: both;
@@ -69,63 +69,114 @@ section {
 	/* border: 3px solid; */
 	height: 15em;
 	position: relative;
-	background: purple;
+	background-image: url(../images/dsc_0009.jpg);
+	background-size: cover;
 	color: #fff;
+    font-size: 1.5em;
 }
-.class h3 {
+.class a {
     position: absolute;
     top: 50%;
     transform: translate(-50%, -50%);
     left: 50%;
 }
 #event {
-	text-align:center;
-	padding: 20% 10% 20% 10%;
+	background-color: #000;
+	padding-bottom: 3%;
+	padding-top: 3%;
+	text-align: center;
 }
 .eachevent {
-	width: 25%;
+	width: 32%;
+	margin: .5%;
 	float: left;
+	/* border: 3px solid; */
+	height: 15em;
+	position: relative;
+	background-image: url(../images/dsc_0009.jpg);
+	background-size: cover;
+	color: #fff;
+}
+#events {
+	text-align:center;
+	padding: 10% 10% 13% 10%;
 }
 .clear:after {
 content:"";
 display: block;
 clear: both;
 }
+form {
+	font-size: 1em;
+	text-align: center;
+}
+input {
+	text-align: center;
+	width: 50%;
+	font-size: 1em;
+	margin-bottom: 1em;
+}
+input[type=submit] {
+    background-color: #000;
+    border: none;
+    color: white;
+    padding: .5em .5em;
+    text-decoration: none;
+    margin: .25em .5em;
+    cursor: pointer;
+}
+#emailform {
+	background-color: rgba(255, 255, 255,0.5);
+}
 #freebieoffernormal {
-	text-align: center;
-}
-#freebieoffersmall {
-	text-align: center;
-}
-#coursespreview {
-	text-align:center;
-	padding: 20% 10% 20% 10%;
-}
-#aboutpreview {
 	text-align: center;
 	background-image: url(../images/Fish-Tacos-14.jpg);
 	background-size: cover;
 	/* padding-bottom: 30%; */
 	padding: 10em 0;
 }
+#freebieoffersmall {
+	text-align: center;
+	padding: 10em 0;
+}
+#coursespreview {
+	text-align:center;
+	padding: 10% 10% 13% 10%;
+}
+#aboutpreview {
+	text-align: center;
+	background-image: url(../images/moleverde.jpg);
+	background-size: cover;
+	/* padding-bottom: 30%; */
+	padding: 10em 0;
+}
+.homeabout {
+	background-color: rgba(255, 255, 255,0.5);
+}
 h1 {color: #333;
-	font-size: 54px;
+	font-size: 4em;
 	text-transform: uppercase;
 	font-family: 'Merriweather' 'Georgia', serif;
 }
 h2 {color: #333;
-	font-size: 44px;
+	font-size: 2.5em;
 	text-transform: uppercase;
 	font-family: 'Merriweather' 'Georgia', serif;
+	padding: .25em;
 }
 h3 {color: #333;
-	font-size: 34px;
+	font-size: 2em;
 	text-transform: uppercase;
 	font-family: 'Merriweather' 'Georgia', serif;
 }
 p {color: #333;
-	font-size: 14px;
+	font-size: 1em;
 	font-family: 'Nunito Sans', 'Arial', sans-serif;
+	padding: .20em;
+}
+a {
+	font-family: 'Nunito Sans', 'Arial', sans-serif;
+	font-weight: bold;
 }
 ul {
 
