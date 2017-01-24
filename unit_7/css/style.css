@@ -10,6 +10,8 @@ header {
 	background-color: #FFED74;
 	background-image: url(../images/Fish-Tacos-14.jpg);
 	background-size: cover;
+	background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 nav {
 	padding-top: 5%;
@@ -20,6 +22,7 @@ nav a{
 	display: block;
 }
 article {
+	z-index: -1;
 }
 footer {
 	background-color: #000;
@@ -34,6 +37,43 @@ div {
 }
 section {
 	padding: 20px;
+}
+h1 {color: #333;
+	font-size: 4em;
+	text-transform: uppercase;
+	font-family: 'Merriweather' 'Georgia', serif;
+}
+h2 {color: #333;
+	font-size: 2.5em;
+	text-transform: uppercase;
+	font-family: 'Merriweather' 'Georgia', serif;
+	padding: .25em;
+}
+h3 {color: #333;
+	font-size: 2em;
+	text-transform: uppercase;
+	font-family: 'Merriweather' 'Georgia', serif;
+}
+p {color: #333;
+	font-size: 1.25em;
+	font-family: 'Nunito Sans', 'Arial', sans-serif;
+	padding: .20em;
+}
+a {
+	font-family: 'Nunito Sans', 'Arial', sans-serif;
+	font-weight: bold;
+}
+ul {
+
+}
+li {
+	color: #333;
+	list-style: none;
+	padding-bottom: 15px;
+}
+img {
+	margin: auto;
+	width: 100%;
 }
 #specialnav {
 	background-color: rgba(255, 255, 255,0.5);
@@ -66,19 +106,38 @@ section {
 	width: 24%;
 	margin: .5%;
 	float: left;
-	/* border: 3px solid; */
-	height: 15em;
+	/* border: 3px solid; 
+	height: 10em; */
 	position: relative;
-	background-image: url(../images/dsc_0009.jpg);
-	background-size: cover;
-	color: #fff;
+	color: #000;
     font-size: 1.5em;
+    padding: 10% 0 10% 0;
+    background-color: rgb(240, 68, 0);
+    font-weight: bold; /* ask why these aren't showing */
 }
 .class a {
     position: absolute;
     top: 50%;
     transform: translate(-50%, -50%);
     left: 50%;
+    background-color: rgba(255, 255, 255,0.5); /* ask why these aren't showing */
+}
+#tacos {
+	background-image: url(../images/tacos-al-pastor.jpg);
+	background-size: cover;
+}
+#tamales {
+	background-image: url(../images/tamales.jpg);
+	background-size: cover;
+}
+#mole {
+	background-image: url(../images/moleverde.jpg);
+	background-size: cover;
+	background-position: center;
+}
+#frijoles {
+	background-image: url(../images/frijolescharros.jpg);
+	background-size: cover;
 }
 #event {
 	background-color: #000;
@@ -90,25 +149,29 @@ section {
 	width: 32%;
 	margin: .5%;
 	float: left;
-	/* border: 3px solid; */
+	/* border: 3px solid; 
+	background-image: url(../images/dsc_0009.jpg);
+	background-size: cover;*/
 	height: 15em;
 	position: relative;
-	background-image: url(../images/dsc_0009.jpg);
-	background-size: cover;
+	background-color: rgb(240, 68, 0);
 	color: #fff;
 }
 #events {
 	text-align:center;
-	padding: 10% 10% 13% 10%;
+	padding: 10% 10% 13% 10%; /* keeping the breaks? */
+}
+.clear {
 }
 .clear:after {
-content:"";
-display: block;
-clear: both;
+	content:"";
+	display: block;
+	clear: both;
 }
 form {
 	font-size: 1em;
 	text-align: center;
+	font-family: 'Nunito Sans', 'Arial', sans-serif;
 }
 input {
 	text-align: center;
@@ -125,8 +188,9 @@ input[type=submit] {
     margin: .25em .5em;
     cursor: pointer;
 }
-#emailform {
+.emailform {
 	background-color: rgba(255, 255, 255,0.5);
+	padding: 5% 10% 5% 10%;
 }
 #freebieoffernormal {
 	text-align: center;
@@ -134,10 +198,12 @@ input[type=submit] {
 	background-size: cover;
 	/* padding-bottom: 30%; */
 	padding: 10em 0;
+	background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 #freebieoffersmall {
 	text-align: center;
-	padding: 10em 0;
+	padding: 5% 0 5% 0;
 }
 #coursespreview {
 	text-align:center;
@@ -149,45 +215,12 @@ input[type=submit] {
 	background-size: cover;
 	/* padding-bottom: 30%; */
 	padding: 10em 0;
+	background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 .homeabout {
 	background-color: rgba(255, 255, 255,0.5);
-}
-h1 {color: #333;
-	font-size: 4em;
-	text-transform: uppercase;
-	font-family: 'Merriweather' 'Georgia', serif;
-}
-h2 {color: #333;
-	font-size: 2.5em;
-	text-transform: uppercase;
-	font-family: 'Merriweather' 'Georgia', serif;
-	padding: .25em;
-}
-h3 {color: #333;
-	font-size: 2em;
-	text-transform: uppercase;
-	font-family: 'Merriweather' 'Georgia', serif;
-}
-p {color: #333;
-	font-size: 1em;
-	font-family: 'Nunito Sans', 'Arial', sans-serif;
-	padding: .20em;
-}
-a {
-	font-family: 'Nunito Sans', 'Arial', sans-serif;
-	font-weight: bold;
-}
-ul {
-
-}
-li {
-	color: #333;
-	list-style: none;
-	padding-bottom: 15px;
-}
-img {margin: auto;
-	width: 100%;
+	padding: 5% 10% 5% 10%;
 }
 #slogan {
 	font-style: italic;
@@ -197,14 +230,12 @@ img {margin: auto;
     border: 1px black solid;
     padding: 20px;
 }
-
 #left {
     border: 1px black solid;
     padding: 20px;
     float: left;
     width: 50%;
 }
-
 #right {
     border: 1px black solid;
     padding: 20px;
@@ -219,3 +250,64 @@ img {margin: auto;
     clear: both;
     height: 0;
 }
+@media screen and (max-width: 800px) {
+    #specialnav {
+    	width: 60%;
+    }
+}
+@media screen and (max-width: 340px) {
+    #specialnav {
+    	width: 100%;
+    }
+    .class {
+    	width: 100%
+    	font-size: 2em;
+    }
+    .class a {
+	    top: 50%;
+	    transform: translate(-50%, -50%);
+	    left: 50%;
+	    background-color: rgba(255, 255, 255,0.5); /* ask why these aren't showing */
+	}
+	}
+	#freebieoffernormal {
+		text-align: center;
+		background-size: cover;
+		/* padding-bottom: 30%; */
+		padding: 3em 0;
+		background-repeat: no-repeat;
+	    background-attachment: fixed;
+	}
+	form {
+		font-size: 1.25em;
+		text-align: center;
+		font-family: 'Nunito Sans', 'Arial', sans-serif;
+	}
+	input {
+		text-align: center;
+		width: 90%;
+		font-size: 1em;
+		margin-bottom: 1.5em;
+	}
+	input[type=submit] {
+	    background-color: #000;
+	    border: none;
+	    color: white;
+	    padding: .25em .25em;
+	    text-decoration: none;
+	    margin: .25em .2em;
+	    cursor: pointer;
+	}
+	.emailform {
+		background-color: rgba(255, 255, 255,0.5);
+		padding: 5% 0% 5% 0%;
+	}
+	#aboutpreview {
+		padding: 5em 0;
+	}
+	.homeabout {
+		padding: 5% 3% 5% 3%;
+	}
+} 
+
+/* How to hide sticky nav and instead add a back to top sticky button? */
