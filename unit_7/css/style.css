@@ -41,18 +41,23 @@ section {
 h1 {color: #333;
 	font-size: 4em;
 	text-transform: uppercase;
-	font-family: 'Merriweather' 'Georgia', serif;
+	font-family: 'Nunito Sans', 'Arial', sans-serif;
+	line-height: 100%;
+	font-weight: bold;
 }
 h2 {color: #333;
-	font-size: 2.5em;
+	font-size: 3em;
 	text-transform: uppercase;
-	font-family: 'Merriweather' 'Georgia', serif;
+	font-family: 'Nunito Sans', 'Arial', sans-serif;
 	padding: .25em;
+	font-weight: bold;
 }
 h3 {color: #333;
 	font-size: 2em;
 	text-transform: uppercase;
-	font-family: 'Merriweather' 'Georgia', serif;
+	font-family: 'Nunito Sans', 'Arial', sans-serif;
+	font-weight: bold;
+	/*font-family: 'Merriweather' 'Georgia', serif;*/
 }
 p {color: #333;
 	font-size: 1.25em;
@@ -62,6 +67,7 @@ p {color: #333;
 a {
 	font-family: 'Nunito Sans', 'Arial', sans-serif;
 	font-weight: bold;
+	color: rgb(240, 68, 0);
 }
 ul {
 
@@ -75,18 +81,20 @@ img {
 	margin: auto;
 	width: 100%;
 }
+.fade:hover{
+    opacity:1;
+}
 #specialnav {
 	background-color: rgba(255, 255, 255,0.5);
 	width: 35%;
 	text-transform: uppercase;
 	/*padding: 40px;*/
-	padding: 2em 1em;
+	padding: 2em 2em;
 }
 #specialnav a {
 	font-size: 3em;
 }
 .stickyitem {
-	/* float: left; */
 	padding: 0px 20px 0px 20px;
 	color: #FFF;
 	text-transform: uppercase;
@@ -102,25 +110,44 @@ img {
 .navanchor {
 	clear: both;
 }
+.grid {
+	padding-bottom: 3%;
+	padding-top: 3%;
+	text-align: center;
+}
+
+.grid p{
+	padding-bottom: 3%;
+}
 .class {
-	width: 24%;
+	width: 49%;
 	margin: .5%;
 	float: left;
+	height: 0;
 	/* border: 3px solid; 
 	height: 10em; */
 	position: relative;
 	color: #000;
     font-size: 1.5em;
-    padding: 10% 0 10% 0;
+    padding: 10% 0 13% 0;
     background-color: rgb(240, 68, 0);
     font-weight: bold; /* ask why these aren't showing */
 }
-.class a {
+.class span {
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    background-color: rgba(255, 255, 255,0.6); 
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+.class h4 {
     position: absolute;
     top: 50%;
     transform: translate(-50%, -50%);
     left: 50%;
-    background-color: rgba(255, 255, 255,0.5); /* ask why these aren't showing */
+    font-weight: 900; /* ask why these aren't showing */
 }
 #tacos {
 	background-image: url(../images/tacos-al-pastor.jpg);
@@ -139,19 +166,10 @@ img {
 	background-image: url(../images/frijolescharros.jpg);
 	background-size: cover;
 }
-#event {
-	background-color: #000;
-	padding-bottom: 3%;
-	padding-top: 3%;
-	text-align: center;
-}
 .eachevent {
 	width: 32%;
 	margin: .5%;
 	float: left;
-	/* border: 3px solid; 
-	background-image: url(../images/dsc_0009.jpg);
-	background-size: cover;*/
 	height: 15em;
 	position: relative;
 	background-color: rgb(240, 68, 0);
@@ -160,6 +178,23 @@ img {
 #events {
 	text-align:center;
 	padding: 10% 10% 13% 10%; /* keeping the breaks? */
+}
+#singleslunch {
+	background-image: url(../images/cooking-dating.jpg);
+	background-size: cover;
+}
+#momsnight {
+	background-image: url(../images/cooking-mom.jpg);
+	background-size: cover;
+}
+#littlechefs {
+	background-image: url(../images/cooking-kids.jpg);
+	background-size: cover;
+	background-position: center;
+}
+#openkitchen {
+	background-image: url(../images/Cooking-class.jpg);
+	background-size: cover;
 }
 .clear {
 }
@@ -170,14 +205,20 @@ img {
 }
 form {
 	font-size: 1em;
+	width: 100%;
+	max-width: 600px;
+	margin: 0 auto;
 	text-align: center;
 	font-family: 'Nunito Sans', 'Arial', sans-serif;
+	padding-left: 20px;
+	padding-right: 20px;
 }
 input {
 	text-align: center;
-	width: 50%;
 	font-size: 1em;
 	margin-bottom: 1em;
+	width: 60%;
+	padding: 2% 0 2% 0;
 }
 input[type=submit] {
     background-color: #000;
@@ -191,6 +232,12 @@ input[type=submit] {
 .emailform {
 	background-color: rgba(255, 255, 255,0.5);
 	padding: 5% 10% 5% 10%;
+	width: 70%;
+	margin: auto;
+}
+.emailform h2 {
+	width: 80%;
+	margin: auto;
 }
 #freebieoffernormal {
 	text-align: center;
@@ -205,13 +252,22 @@ input[type=submit] {
 	text-align: center;
 	padding: 5% 0 5% 0;
 }
-#coursespreview {
+.grid {
 	text-align:center;
 	padding: 10% 10% 13% 10%;
 }
+#mission {
+	text-align: center;
+	background-image: url(../images/tequilashotglasses.jpg);
+	background-size: cover;
+	/* padding-bottom: 30%; */
+	padding: 10em 0;
+	background-repeat: no-repeat;
+    background-attachment: fixed;
+}
 #aboutpreview {
 	text-align: center;
-	background-image: url(../images/moleverde.jpg);
+	background-image: url(../images/tequilashotglasses.jpg);
 	background-size: cover;
 	/* padding-bottom: 30%; */
 	padding: 10em 0;
@@ -221,6 +277,8 @@ input[type=submit] {
 .homeabout {
 	background-color: rgba(255, 255, 255,0.5);
 	padding: 5% 10% 5% 10%;
+	width: 70%;
+	margin: auto;
 }
 #slogan {
 	font-style: italic;
@@ -260,7 +318,7 @@ input[type=submit] {
     	width: 100%;
     }
     .class {
-    	width: 100%
+    	width: 100%;
     	font-size: 2em;
     }
     .class a {
@@ -268,7 +326,6 @@ input[type=submit] {
 	    transform: translate(-50%, -50%);
 	    left: 50%;
 	    background-color: rgba(255, 255, 255,0.5); /* ask why these aren't showing */
-	}
 	}
 	#freebieoffernormal {
 		text-align: center;
@@ -278,14 +335,8 @@ input[type=submit] {
 		background-repeat: no-repeat;
 	    background-attachment: fixed;
 	}
-	form {
-		font-size: 1.25em;
-		text-align: center;
-		font-family: 'Nunito Sans', 'Arial', sans-serif;
-	}
 	input {
 		text-align: center;
-		width: 90%;
 		font-size: 1em;
 		margin-bottom: 1.5em;
 	}
@@ -293,10 +344,13 @@ input[type=submit] {
 	    background-color: #000;
 	    border: none;
 	    color: white;
-	    padding: .25em .25em;
+	    padding: 1em 1em;
+	    width: 60%;
 	    text-decoration: none;
-	    margin: .25em .2em;
+	    margin: auto;
 	    cursor: pointer;
+	    display: block;
+	    word-wrap: break-word;
 	}
 	.emailform {
 		background-color: rgba(255, 255, 255,0.5);
@@ -309,5 +363,3 @@ input[type=submit] {
 		padding: 5% 3% 5% 3%;
 	}
 } 
-
-/* How to hide sticky nav and instead add a back to top sticky button? */
