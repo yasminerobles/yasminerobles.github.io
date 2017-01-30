@@ -1,5 +1,5 @@
-@import url('https://fonts.googleapis.com/css?family=Merriweather|Nunito+Sans');
-* {
+@import url('https://fonts.googleapis.com/css?family=Merriweather|Nunito+Sans:400,700,800,900');
+* { 
 	box-sizing: border-box;
 	margin: 0;
 	padding: 0;
@@ -43,20 +43,20 @@ h1 {color: #333;
 	text-transform: uppercase;
 	font-family: 'Nunito Sans', 'Arial', sans-serif;
 	line-height: 100%;
-	font-weight: bold;
+	font-weight: 800;
 }
 h2 {color: #333;
 	font-size: 3em;
 	text-transform: uppercase;
 	font-family: 'Nunito Sans', 'Arial', sans-serif;
 	padding: .25em;
-	font-weight: bold;
+	font-weight: 800;
 }
 h3 {color: #333;
 	font-size: 2em;
 	text-transform: uppercase;
 	font-family: 'Nunito Sans', 'Arial', sans-serif;
-	font-weight: bold;
+	font-weight: 800;
 	/*font-family: 'Merriweather' 'Georgia', serif;*/
 }
 p {color: #333;
@@ -124,14 +124,12 @@ img {
 	margin: .5%;
 	float: left;
 	height: 0;
-	/* border: 3px solid; 
-	height: 10em; */
 	position: relative;
 	color: #000;
-    font-size: 1.5em;
+    font-size: 2em;
     padding: 10% 0 13% 0;
     background-color: rgb(240, 68, 0);
-    font-weight: bold; /* ask why these aren't showing */
+    font-weight: 900;
 }
 .class span {
     position: absolute;
@@ -147,7 +145,8 @@ img {
     top: 50%;
     transform: translate(-50%, -50%);
     left: 50%;
-    font-weight: 900; /* ask why these aren't showing */
+    font-weight: 900;
+    line-height: 100%;
 }
 #tacos {
 	background-image: url(../images/tacos-al-pastor.jpg);
@@ -210,33 +209,32 @@ form {
 	margin: 0 auto;
 	text-align: center;
 	font-family: 'Nunito Sans', 'Arial', sans-serif;
-	padding-left: 20px;
-	padding-right: 20px;
+	padding-left: 10px;
+	padding-right: 10px;
 }
 input {
 	text-align: center;
 	font-size: 1em;
 	margin-bottom: 1em;
-	width: 60%;
-	padding: 2% 0 2% 0;
+	width: 80%;
+	padding: 3% 0 3% 0;
 }
 input[type=submit] {
     background-color: #000;
     border: none;
     color: white;
-    padding: .5em .5em;
     text-decoration: none;
     margin: .25em .5em;
     cursor: pointer;
+    width: 50%
 }
 .emailform {
 	background-color: rgba(255, 255, 255,0.5);
-	padding: 5% 10% 5% 10%;
-	width: 70%;
+	padding: 5% 5% 5% 5%;
+	width: 90%;
 	margin: auto;
 }
 .emailform h2 {
-	width: 80%;
 	margin: auto;
 }
 #freebieoffernormal {
