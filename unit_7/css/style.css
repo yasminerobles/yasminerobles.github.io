@@ -125,7 +125,7 @@ img {
 	float: left;
 	height: 0;
 	position: relative;
-	color: #000;
+	color: #333;
     font-size: 2em;
     padding: 10% 0 13% 0;
     background-color: rgb(240, 68, 0);
@@ -310,10 +310,29 @@ input[type=submit] {
     #specialnav {
     	width: 60%;
     }
+    .stickyitem {
+    	font-size: 1.2em;
+    }
+}
+@media screen and (max-width: 700px) {
+    #specialnav {
+    	width: 70%;
+    }
+    .stickyitem {
+    	padding: 0 40px 0 40px;
+    	line-height: 200%; 
+    }
 }
 @media screen and (max-width: 340px) {
     #specialnav {
     	width: 100%;
+    }
+    .stickyitem {
+    	padding: 0 10px 0 10px;
+    	line-height: 200%; 
+    }
+    .stickyitem a {
+    	clear: both; /* how to make this not next to each other AND disappear unless scrolling up? */
     }
     .class {
     	width: 100%;
@@ -323,15 +342,23 @@ input[type=submit] {
 	    top: 50%;
 	    transform: translate(-50%, -50%);
 	    left: 50%;
-	    background-color: rgba(255, 255, 255,0.5); /* ask why these aren't showing */
+	    background-color: rgba(255, 255, 255,0.5); /* how to make this go edge to edge and let text fill rectangle? */
 	}
 	#freebieoffernormal {
 		text-align: center;
 		background-size: cover;
-		/* padding-bottom: 30%; */
 		padding: 3em 0;
 		background-repeat: no-repeat;
 	    background-attachment: fixed;
+	}
+	#mission {
+		padding: 2em 0;
+	}
+	.homeabout {
+		width: 100%;
+	}
+	h2 {
+		line-height: 105%;
 	}
 	input {
 		text-align: center;
@@ -343,7 +370,7 @@ input[type=submit] {
 	    border: none;
 	    color: white;
 	    padding: 1em 1em;
-	    width: 60%;
+	    width: 90%;
 	    text-decoration: none;
 	    margin: auto;
 	    cursor: pointer;
@@ -353,6 +380,7 @@ input[type=submit] {
 	.emailform {
 		background-color: rgba(255, 255, 255,0.5);
 		padding: 5% 0% 5% 0%;
+		width: 100%;
 	}
 	#aboutpreview {
 		padding: 5em 0;
@@ -360,4 +388,5 @@ input[type=submit] {
 	.homeabout {
 		padding: 5% 3% 5% 3%;
 	}
+	/* FOOTER TO ONE COLUMN? Adding the on scroll back to top image*/
 } 
