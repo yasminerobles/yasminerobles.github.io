@@ -5,6 +5,8 @@
 	<link rel="stylesheet" href="css/style.css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 	<script src="js/jquery.sticky.js"></script>
+	<script src="js/modernizr-custom.js" type="text/javascript"></script>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<a name="top"></a>
 </head>
 <body>
@@ -101,7 +103,19 @@
 </div>
 <script>
   $(document).ready(function(){
-    $(".sticky").sticky({topSpacing:0,zIndex:9999});
+    $(".no-touchevents .sticky").sticky({topSpacing:0,zIndex:9999});
+    // Hide Header on on scroll down
+		var $scrollPast = $('header').height();  		
+		$(window).scroll(function(event){ 		   
+		var $windowPosition = $(window).scrollTop(); 		   
+		if ($windowPosition >= $scrollPast){ 		       
+		// downscroll code 		       
+		$('body').removeClass('nav-up').addClass('nav-down'); 		   
+		} else { 		      
+		// upscroll code 		      
+		$('body').removeClass('nav-down').addClass('nav-up'); 		   
+	} 		
+});
   });
 </script>
 </body>

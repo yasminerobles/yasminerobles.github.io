@@ -88,7 +88,6 @@ img {
 	background-color: rgba(255, 255, 255,0.5);
 	width: 35%;
 	text-transform: uppercase;
-	/*padding: 40px;*/
 	padding: 2em 2em;
 }
 #specialnav a {
@@ -106,6 +105,21 @@ img {
 	padding-bottom: 3%;
 	padding-top: 3%;
 	text-align: center;
+}
+.touchevents .sticky {
+	position:fixed;
+	top:-300px;
+	left:0;
+	width: 100%;
+}
+.touchevents .nav-down .sticky {
+	top: 0;
+}
+.touchevents .nav-down {
+	padding-top: 300px;
+}
+.touchevents .nav-up .sticky {
+	top: -300px;
 }
 .navanchor {
 	clear: both;
@@ -148,6 +162,9 @@ img {
     font-weight: 900;
     line-height: 100%;
 }
+.class:hover span {
+    background-color: rgba(255, 255, 255,0.8); 
+}
 #tacos {
 	background-image: url(../images/tacos-al-pastor.jpg);
 	background-size: cover;
@@ -176,7 +193,7 @@ img {
 }
 #events {
 	text-align:center;
-	padding: 10% 10% 13% 10%; /* keeping the breaks? */
+	padding: 10% 10% 13% 10%;
 }
 #singleslunch {
 	background-image: url(../images/cooking-dating.jpg);
@@ -241,7 +258,6 @@ input[type=submit] {
 	text-align: center;
 	background-image: url(../images/Fish-Tacos-14.jpg);
 	background-size: cover;
-	/* padding-bottom: 30%; */
 	padding: 10em 0;
 	background-repeat: no-repeat;
     background-attachment: fixed;
@@ -258,7 +274,6 @@ input[type=submit] {
 	text-align: center;
 	background-image: url(../images/tequilashotglasses.jpg);
 	background-size: cover;
-	/* padding-bottom: 30%; */
 	padding: 10em 0;
 	background-repeat: no-repeat;
     background-attachment: fixed;
@@ -267,7 +282,6 @@ input[type=submit] {
 	text-align: center;
 	background-image: url(../images/tequilashotglasses.jpg);
 	background-size: cover;
-	/* padding-bottom: 30%; */
 	padding: 10em 0;
 	background-repeat: no-repeat;
     background-attachment: fixed;
