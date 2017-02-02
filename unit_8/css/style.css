@@ -337,26 +337,29 @@ input[type=submit] {
     	line-height: 200%; 
     }
 }
-@media screen and (max-width: 340px) {
+@media screen and (max-width: 460px) {
     #specialnav {
     	width: 100%;
     }
     .stickyitem {
+    	display: inline-block;
     	padding: 0 10px 0 10px;
     	line-height: 200%; 
     }
-    .stickyitem a {
-    	clear: both; /* how to make this not next to each other AND disappear unless scrolling up? */
+    .stickyitem {
+    	text-align: center;
+    	float: none;
     }
     .class {
     	width: 100%;
     	font-size: 2em;
+    	padding: 15% 0 13% 0;
     }
     .class a {
 	    top: 50%;
 	    transform: translate(-50%, -50%);
 	    left: 50%;
-	    background-color: rgba(255, 255, 255,0.5); /* how to make this go edge to edge and let text fill rectangle? */
+	    background-color: rgba(255, 255, 255,0.5); 
 	}
 	#freebieoffernormal {
 		text-align: center;
@@ -370,6 +373,7 @@ input[type=submit] {
 	}
 	.homeabout {
 		width: 100%;
+		padding: 5%;
 	}
 	h2 {
 		line-height: 105%;
@@ -399,8 +403,22 @@ input[type=submit] {
 	#aboutpreview {
 		padding: 5em 0;
 	}
+	#left {
+	    width: 100%;
+	    text-align: center;
+	}
+	#right {
+		text-align: center;
+	    width: 100%;
+	}
+} 
+@media screen and (max-width: 340px) {
 	.homeabout {
+		width: 100%;
 		padding: 5% 3% 5% 3%;
 	}
-	/* FOOTER TO ONE COLUMN? Adding the on scroll back to top image*/
+	.class {
+    	font-size: 2em;
+    	padding: 35% 0 13% 0;
+    }
 } 
