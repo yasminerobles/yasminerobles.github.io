@@ -17,7 +17,7 @@ nav {
 	padding-top: 5%;
 }
 nav a{
-	color: #000;
+	color: #333;
 	float: none;
 	display: block;
 }
@@ -92,6 +92,7 @@ img {
 }
 #specialnav a {
 	font-size: 3em;
+	text-decoration: none;
 }
 .stickyitem {
 	padding: 0px 20px 0px 20px;
@@ -106,11 +107,17 @@ img {
 	padding-top: 3%;
 	text-align: center;
 }
-.touchevents .sticky {
-	position:fixed;
+.sticky {
+	transition-duration:.5s;
+/*	position:fixed;
 	top:-300px;
-	left:0;
+	left:0; */
 	width: 100%;
+}
+.sticky.fixedTop {
+	top:0;
+	position:fixed;
+	z-index:1;
 }
 .touchevents .nav-down .sticky {
 	top: 0;
@@ -149,7 +156,7 @@ img {
     position: absolute;
     top: 0%;
     left: 0%;
-    background-color: rgba(255, 255, 255,0.6); 
+    background-color: rgba(255, 255, 255,0.4);
     display: block;
     width: 100%;
     height: 100%;
@@ -274,23 +281,23 @@ input[type=submit] {
 	text-align: center;
 	background-image: url(../images/tequilashotglasses.jpg);
 	background-size: cover;
-	padding: 10em 0;
+	padding: 0;
 	background-repeat: no-repeat;
-    background-attachment: fixed;
+	background-attachment: fixed;
 }
 #aboutpreview {
 	text-align: center;
 	background-image: url(../images/tequilashotglasses.jpg);
 	background-size: cover;
-	padding: 10em 0;
+	padding: 0;
 	background-repeat: no-repeat;
-    background-attachment: fixed;
+	background-attachment: fixed;
 }
 .homeabout {
-	background-color: rgba(255, 255, 255,0.5);
-	padding: 5% 10% 5% 10%;
-	width: 70%;
-	margin: auto;
+	background-color: rgba(104, 111, 253, 0.5);
+	padding: 15em 10% 15em 10%;
+	/* width: 70%; */
+	/* margin: auto; */
 }
 #slogan {
 	font-style: italic;
