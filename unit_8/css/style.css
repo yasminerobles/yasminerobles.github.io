@@ -14,10 +14,10 @@ header {
     background-attachment: fixed;
 }
 nav {
-	padding-top: 5%;
+	padding-top: 12%;
 }
 nav a{
-	color: #000;
+	color: #333;
 	float: none;
 	display: block;
 }
@@ -67,7 +67,10 @@ p {color: #333;
 a {
 	font-family: 'Nunito Sans', 'Arial', sans-serif;
 	font-weight: bold;
-	color: rgb(240, 68, 0);
+	color: rgb(253, 84, 0);
+}
+a:hover { 
+    color: #FD5400;
 }
 ul {
 
@@ -88,10 +91,11 @@ img {
 	background-color: rgba(255, 255, 255,0.5);
 	width: 35%;
 	text-transform: uppercase;
-	padding: 2em 2em;
+	padding: 3em 2em;
 }
 #specialnav a {
 	font-size: 3em;
+	text-decoration: none;
 }
 .stickyitem {
 	padding: 0px 20px 0px 20px;
@@ -106,11 +110,17 @@ img {
 	padding-top: 3%;
 	text-align: center;
 }
-.touchevents .sticky {
-	position:fixed;
+.sticky {
+	transition-duration:.5s;
+/*	position:fixed;
 	top:-300px;
-	left:0;
+	left:0; */
 	width: 100%;
+}
+.sticky.fixedTop {
+	top:0;
+	position:fixed;
+	z-index:1;
 }
 .touchevents .nav-down .sticky {
 	top: 0;
@@ -125,11 +135,13 @@ img {
 	clear: both;
 }
 .grid {
-	padding-bottom: 3%;
-	padding-top: 3%;
+	padding-bottom: 10%;
+	padding-top: 10%;
 	text-align: center;
 }
-
+.grid h2 {
+	padding: 0;
+}
 .grid p{
 	padding-bottom: 3%;
 }
@@ -142,14 +154,13 @@ img {
 	color: #333;
     font-size: 2em;
     padding: 10% 0 13% 0;
-    background-color: rgb(240, 68, 0);
     font-weight: 900;
 }
 .class span {
     position: absolute;
     top: 0%;
     left: 0%;
-    background-color: rgba(255, 255, 255,0.6); 
+    background-color: rgba(255, 255, 255,0.4);
     display: block;
     width: 100%;
     height: 100%;
@@ -163,7 +174,8 @@ img {
     line-height: 100%;
 }
 .class:hover span {
-    background-color: rgba(255, 255, 255,0.8); 
+    background-color: rgba(0, 176, 163, 0.5);
+    color: #fff; 
 }
 #tacos {
 	background-image: url(../images/tacos-al-pastor.jpg);
@@ -213,6 +225,7 @@ img {
 	background-size: cover;
 }
 .clear {
+	width: 100%;
 }
 .clear:after {
 	content:"";
@@ -245,52 +258,85 @@ input[type=submit] {
     cursor: pointer;
     width: 50%
 }
-.emailform {
-	background-color: rgba(255, 255, 255,0.5);
-	padding: 5% 5% 5% 5%;
-	width: 90%;
-	margin: auto;
+input:hover[type="submit"] {
+background: #FD5400;
 }
-.emailform h2 {
+.emailform {
+	background-color: rgba(255, 255, 255,0.7);
 	margin: auto;
+	padding: 6em 0;
+	text-align: center;
 }
 #freebieoffernormal {
 	text-align: center;
 	background-image: url(../images/Fish-Tacos-14.jpg);
 	background-size: cover;
-	padding: 10em 0;
 	background-repeat: no-repeat;
     background-attachment: fixed;
+    padding: 0px;
 }
 #freebieoffersmall {
 	text-align: center;
-	padding: 5% 0 5% 0;
+	margin: auto;
+	width: 70%;
 }
 .grid {
 	text-align:center;
-	padding: 10% 10% 13% 10%;
+	width: 100%;
 }
 #mission {
 	text-align: center;
 	background-image: url(../images/tequilashotglasses.jpg);
 	background-size: cover;
-	padding: 10em 0;
+	padding: 0;
 	background-repeat: no-repeat;
-    background-attachment: fixed;
+	background-attachment: fixed;
+}
+.testimonial {
+	padding: 5em;
+	margin: auto;
+	text-align: center;
+	width: 70%;
+}
+#foodimage {
+	text-align: center;
+	background-image: url(../images/enchiladasrojas.jpg);
+	background-size: cover;
+	padding-top: 20em;
+	padding-bottom: 20em;
+	background-attachment: fixed;
+}
+#foodimage2 {
+	text-align: center;
+	background-image: url(../images/dsc_1004.jpg);
+	background-size: cover;
+	padding-top: 20em;
+	padding-bottom: 20em;
+	background-attachment: fixed;
 }
 #aboutpreview {
 	text-align: center;
 	background-image: url(../images/tequilashotglasses.jpg);
 	background-size: cover;
-	padding: 10em 0;
+	padding: 0;
 	background-repeat: no-repeat;
-    background-attachment: fixed;
+	background-attachment: fixed;
 }
 .homeabout {
-	background-color: rgba(255, 255, 255,0.5);
-	padding: 5% 10% 5% 10%;
+	background-color: rgba(0, 176, 163, 0.7);
+	padding: 10em 10em 10em 10em;
+	text-align: center;
+}
+.homeabout h2{
+	color:#fff;
 	width: 70%;
-	margin: auto;
+	margin:auto;
+
+}
+.homeabout p{
+	color:#fff;
+	width: 70%;
+	margin:auto;
 }
 #slogan {
 	font-style: italic;
@@ -320,27 +366,42 @@ input[type=submit] {
     clear: both;
     height: 0;
 }
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 1000px) {
+    .homeabout {
+    	padding: 5em 0em 5em 0em;
+    }
+    #foodimage {
+		text-align: center;
+		background-image: url(../images/enchiladasrojas.jpg);
+		background-size: cover;
+		padding-top: 10em;
+		padding-bottom: 10em;
+		background-attachment: fixed;
+	}
+	#foodimage2 {
+		text-align: center;
+		background-image: url(../images/dsc_1004.jpg);
+		background-size: cover;
+		padding-top: 10em;
+		padding-bottom: 10em;
+		background-attachment: fixed;
+	}
+}
+@media screen and (max-width: 850px) {
     #specialnav {
     	width: 60%;
     }
     .stickyitem {
     	font-size: 1.2em;
     }
+    .testimonial {
+		padding: 5em;
+		margin: auto;
+		text-align: center;
+		width: 80%;
+	}
 }
 @media screen and (max-width: 700px) {
-    #specialnav {
-    	width: 70%;
-    }
-    .stickyitem {
-    	padding: 0 40px 0 40px;
-    	line-height: 200%; 
-    }
-}
-@media screen and (max-width: 460px) {
-    #specialnav {
-    	width: 100%;
-    }
     .stickyitem {
     	display: inline-block;
     	padding: 0 10px 0 10px;
@@ -349,6 +410,40 @@ input[type=submit] {
     .stickyitem {
     	text-align: center;
     	float: none;
+    }
+    #specialnav {
+    	width: 70%;
+    }
+    .stickyitem {
+    	padding: 0 40px 0 40px;
+    	line-height: 200%; 
+    }
+    .homeabout h2{
+		color:#fff;
+		width: 90%;
+		margin:auto;
+	}
+	.homeabout p{
+		color:#fff;
+		width: 90%;
+		margin:auto;
+	}
+	.testimonial {
+		padding: 3em;
+		margin: auto;
+		text-align: center;
+		width: 90%;
+	}
+	.emailform {
+		padding: 3em 0;
+	}
+	#freebieoffersmall {
+		width: 95%;
+	}
+}
+@media screen and (max-width: 500px) {
+	#specialnav {
+    	width: 100%;
     }
     .class {
     	width: 100%;
@@ -368,15 +463,15 @@ input[type=submit] {
 		background-repeat: no-repeat;
 	    background-attachment: fixed;
 	}
-	#mission {
-		padding: 2em 0;
-	}
 	.homeabout {
 		width: 100%;
-		padding: 5%;
+		padding: 5em 0 5em 0;
+	}
+	.homeabout h2 {
+		font-size: 2.25em;
 	}
 	h2 {
-		line-height: 105%;
+		line-height: 110%;
 	}
 	input {
 		text-align: center;
@@ -395,14 +490,17 @@ input[type=submit] {
 	    display: block;
 	    word-wrap: break-word;
 	}
-	.emailform {
-		background-color: rgba(255, 255, 255,0.5);
-		padding: 5% 0% 5% 0%;
-		width: 100%;
+	#freebieoffernormal {
+		text-align: center;
+		background-size: cover;
+		padding: 0em 0;
+		background-repeat: no-repeat;
+	    background-attachment: fixed;
 	}
 	#aboutpreview {
-		padding: 5em 0;
+		padding: 0em 0;
 	}
+
 	#left {
 	    width: 100%;
 	    text-align: center;
@@ -411,14 +509,34 @@ input[type=submit] {
 		text-align: center;
 	    width: 100%;
 	}
+	.testimonial {
+		padding: 2em;
+		width: 90%;
+	}
 } 
 @media screen and (max-width: 340px) {
+	section {
+		padding-left: 0px;
+		padding-right: 0px;
+	}
 	.homeabout {
 		width: 100%;
 		padding: 5% 3% 5% 3%;
+	}
+	.homeabout h2 {
+		font-size: 2em;
+		line-height: 120%;
 	}
 	.class {
     	font-size: 2em;
     	padding: 35% 0 13% 0;
     }
+    form {
+		padding-left: 0px;
+		padding-right: 0px;
+	}
+	.emailform h2 {
+		font-size: 2em;
+		line-height: 120%;
+	}
 } 

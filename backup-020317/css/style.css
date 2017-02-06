@@ -1,0 +1,424 @@
+@import url('https://fonts.googleapis.com/css?family=Merriweather|Nunito+Sans:400,700,800,900');
+* { 
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+body {background-color: #FFF;
+}
+header {
+	background-color: #FFED74;
+	background-image: url(../images/Fish-Tacos-14.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+nav {
+	padding-top: 5%;
+}
+nav a{
+	color: #000;
+	float: none;
+	display: block;
+}
+article {
+	z-index: -1;
+}
+footer {
+	background-color: #000;
+	padding: 15%;
+	color: #fff;
+}
+footer p {
+	color: #fff;
+}
+div {
+	background-color: #FFF;
+}
+section {
+	padding: 20px;
+}
+h1 {color: #333;
+	font-size: 4em;
+	text-transform: uppercase;
+	font-family: 'Nunito Sans', 'Arial', sans-serif;
+	line-height: 100%;
+	font-weight: 800;
+}
+h2 {color: #333;
+	font-size: 3em;
+	text-transform: uppercase;
+	font-family: 'Nunito Sans', 'Arial', sans-serif;
+	padding: .25em;
+	font-weight: 800;
+}
+h3 {color: #333;
+	font-size: 2em;
+	text-transform: uppercase;
+	font-family: 'Nunito Sans', 'Arial', sans-serif;
+	font-weight: 800;
+	/*font-family: 'Merriweather' 'Georgia', serif;*/
+}
+p {color: #333;
+	font-size: 1.25em;
+	font-family: 'Nunito Sans', 'Arial', sans-serif;
+	padding: .20em;
+}
+a {
+	font-family: 'Nunito Sans', 'Arial', sans-serif;
+	font-weight: bold;
+	color: rgb(240, 68, 0);
+}
+ul {
+
+}
+li {
+	color: #333;
+	list-style: none;
+	padding-bottom: 15px;
+}
+img {
+	margin: auto;
+	width: 100%;
+}
+.fade:hover{
+    opacity:1;
+}
+#specialnav {
+	background-color: rgba(255, 255, 255,0.5);
+	width: 35%;
+	text-transform: uppercase;
+	padding: 2em 2em;
+}
+#specialnav a {
+	font-size: 3em;
+}
+.stickyitem {
+	padding: 0px 20px 0px 20px;
+	color: #FFF;
+	text-transform: uppercase;
+	font-family: 'Merriweather' 'Georgia', serif;
+	letter-spacing: 1px;
+}
+.sticky {
+	background-color: #000;
+	padding-bottom: 3%;
+	padding-top: 3%;
+	text-align: center;
+}
+.touchevents .sticky {
+	position:fixed;
+	top:-300px;
+	left:0;
+	width: 100%;
+}
+.touchevents .nav-down .sticky {
+	top: 0;
+}
+.touchevents .nav-down {
+	padding-top: 300px;
+}
+.touchevents .nav-up .sticky {
+	top: -300px;
+}
+.navanchor {
+	clear: both;
+}
+.grid {
+	padding-bottom: 3%;
+	padding-top: 3%;
+	text-align: center;
+}
+
+.grid p{
+	padding-bottom: 3%;
+}
+.class {
+	width: 49%;
+	margin: .5%;
+	float: left;
+	height: 0;
+	position: relative;
+	color: #333;
+    font-size: 2em;
+    padding: 10% 0 13% 0;
+    background-color: rgb(240, 68, 0);
+    font-weight: 900;
+}
+.class span {
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    background-color: rgba(255, 255, 255,0.6); 
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+.class h4 {
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    font-weight: 900;
+    line-height: 100%;
+}
+.class:hover span {
+    background-color: rgba(255, 255, 255,0.8); 
+}
+#tacos {
+	background-image: url(../images/tacos-al-pastor.jpg);
+	background-size: cover;
+}
+#tamales {
+	background-image: url(../images/tamales.jpg);
+	background-size: cover;
+}
+#mole {
+	background-image: url(../images/moleverde.jpg);
+	background-size: cover;
+	background-position: center;
+}
+#frijoles {
+	background-image: url(../images/frijolescharros.jpg);
+	background-size: cover;
+}
+.eachevent {
+	width: 32%;
+	margin: .5%;
+	float: left;
+	height: 15em;
+	position: relative;
+	background-color: rgb(240, 68, 0);
+	color: #fff;
+}
+#events {
+	text-align:center;
+	padding: 10% 10% 13% 10%;
+}
+#singleslunch {
+	background-image: url(../images/cooking-dating.jpg);
+	background-size: cover;
+}
+#momsnight {
+	background-image: url(../images/cooking-mom.jpg);
+	background-size: cover;
+}
+#littlechefs {
+	background-image: url(../images/cooking-kids.jpg);
+	background-size: cover;
+	background-position: center;
+}
+#openkitchen {
+	background-image: url(../images/Cooking-class.jpg);
+	background-size: cover;
+}
+.clear {
+}
+.clear:after {
+	content:"";
+	display: block;
+	clear: both;
+}
+form {
+	font-size: 1em;
+	width: 100%;
+	max-width: 600px;
+	margin: 0 auto;
+	text-align: center;
+	font-family: 'Nunito Sans', 'Arial', sans-serif;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+input {
+	text-align: center;
+	font-size: 1em;
+	margin-bottom: 1em;
+	width: 80%;
+	padding: 3% 0 3% 0;
+}
+input[type=submit] {
+    background-color: #000;
+    border: none;
+    color: white;
+    text-decoration: none;
+    margin: .25em .5em;
+    cursor: pointer;
+    width: 50%
+}
+.emailform {
+	background-color: rgba(255, 255, 255,0.5);
+	padding: 5% 5% 5% 5%;
+	width: 90%;
+	margin: auto;
+}
+.emailform h2 {
+	margin: auto;
+}
+#freebieoffernormal {
+	text-align: center;
+	background-image: url(../images/Fish-Tacos-14.jpg);
+	background-size: cover;
+	padding: 10em 0;
+	background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+#freebieoffersmall {
+	text-align: center;
+	padding: 5% 0 5% 0;
+}
+.grid {
+	text-align:center;
+	padding: 10% 10% 13% 10%;
+}
+#mission {
+	text-align: center;
+	background-image: url(../images/tequilashotglasses.jpg);
+	background-size: cover;
+	padding: 10em 0;
+	background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+#aboutpreview {
+	text-align: center;
+	background-image: url(../images/tequilashotglasses.jpg);
+	background-size: cover;
+	padding: 10em 0;
+	background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+.homeabout {
+	background-color: rgba(255, 255, 255,0.5);
+	padding: 5% 10% 5% 10%;
+	width: 70%;
+	margin: auto;
+}
+#slogan {
+	font-style: italic;
+	text-transform: uppercase;
+}
+#two_column {
+    border: 1px black solid;
+    padding: 20px;
+}
+#left {
+    border: 1px black solid;
+    padding: 20px;
+    float: left;
+    width: 50%;
+}
+#right {
+    border: 1px black solid;
+    padding: 20px;
+    float: right;
+    width: 50%;
+}
+.clearfix:after {
+    visibility: hidden;
+    display: block;
+    font-size: 0;
+    content: " ";
+    clear: both;
+    height: 0;
+}
+@media screen and (max-width: 800px) {
+    #specialnav {
+    	width: 60%;
+    }
+    .stickyitem {
+    	font-size: 1.2em;
+    }
+}
+@media screen and (max-width: 700px) {
+    #specialnav {
+    	width: 70%;
+    }
+    .stickyitem {
+    	padding: 0 40px 0 40px;
+    	line-height: 200%; 
+    }
+}
+@media screen and (max-width: 460px) {
+    #specialnav {
+    	width: 100%;
+    }
+    .stickyitem {
+    	display: inline-block;
+    	padding: 0 10px 0 10px;
+    	line-height: 200%; 
+    }
+    .stickyitem {
+    	text-align: center;
+    	float: none;
+    }
+    .class {
+    	width: 100%;
+    	font-size: 2em;
+    	padding: 15% 0 13% 0;
+    }
+    .class a {
+	    top: 50%;
+	    transform: translate(-50%, -50%);
+	    left: 50%;
+	    background-color: rgba(255, 255, 255,0.5); 
+	}
+	#freebieoffernormal {
+		text-align: center;
+		background-size: cover;
+		padding: 3em 0;
+		background-repeat: no-repeat;
+	    background-attachment: fixed;
+	}
+	#mission {
+		padding: 2em 0;
+	}
+	.homeabout {
+		width: 100%;
+		padding: 5%;
+	}
+	h2 {
+		line-height: 105%;
+	}
+	input {
+		text-align: center;
+		font-size: 1em;
+		margin-bottom: 1.5em;
+	}
+	input[type=submit] {
+	    background-color: #000;
+	    border: none;
+	    color: white;
+	    padding: 1em 1em;
+	    width: 90%;
+	    text-decoration: none;
+	    margin: auto;
+	    cursor: pointer;
+	    display: block;
+	    word-wrap: break-word;
+	}
+	.emailform {
+		background-color: rgba(255, 255, 255,0.5);
+		padding: 5% 0% 5% 0%;
+		width: 100%;
+	}
+	#aboutpreview {
+		padding: 5em 0;
+	}
+	#left {
+	    width: 100%;
+	    text-align: center;
+	}
+	#right {
+		text-align: center;
+	    width: 100%;
+	}
+} 
+@media screen and (max-width: 340px) {
+	.homeabout {
+		width: 100%;
+		padding: 5% 3% 5% 3%;
+	}
+	.class {
+    	font-size: 2em;
+    	padding: 35% 0 13% 0;
+    }
+} 

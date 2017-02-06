@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>La Cocina. A Mexican inspired culinary hangout.</title>
+	<link rel="stylesheet" href="css/style.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<script src="js/jquery.sticky.js"></script>
+	<script src="js/modernizr-custom.js" type="text/javascript"></script>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<a name="top"></a>
+</head>
+<body>
+	<div class="wrapper">
+		<header>
+			<section id="specialnav">
+				<h1>LA COCINA</h1>
+				<p id="slogan">Contemporary Mexican Cooking School</p>
+				<nav>
+					<a class="navanchor" href="#">Learn</a>
+					<a class="navanchor" href="#">Eat</a>
+					<a class="navanchor" href="#">Free</a>
+					<a class="navanchor" href="#">Location</a>
+					<a class="navanchor" href="#">Contact</a>
+				</nav>
+			</section>
+		</header>
+		<section class="sticky">
+			<a href="#" class="stickyitem">Workshops</a>
+			<a href="#" class="stickyitem">Open Restaurant Days</a>
+			<a href="#" class="stickyitem">Free Recipe Book</a>	
+			<a href="#" class="stickyitem">Contact Us</a>
+		</section>
+		<section id="mission">
+			<div class="homeabout">
+				<h3>We are: An innovative community kitchen that teaches you about Mexican culture, language, and, of course, food.</h3>
+			</div>
+		</section>
+		<section class="grid">
+			<h2>Sign up for courses!</h2>
+			<p>Spots fill up fast, so sign up and get cooking.</p>
+			<article class="clear">
+				<a href="#" class="class" id="tacos"><span><h4>TACOS AL PASTOR</h4></span></a>
+				<!--<p>Al pastor is a dish developed in Central Mexico, shawarma spit-grilled meat brought by the Lebanese immigrants to Mexico. Being derived from shawarma, it is also similar to the Turkish döner kebab and the Greek gyros. Although shawarma and döner are usually lamb-based (thus the "shepherd-style" name), gyros and tacos al pastor in Mexico are pork based.</p>-->
+				<a href="#" class="class" id="tamales"><span><h4>TAMALES</h4></span></a>
+				<!--<p>A tamale is a traditional dish made of masa, a dought that's starchy, and usually corn-based, which is steamed in a corn husk or banana leaf. The wrapping is discarded before eating. Tamales can be filled with meats, cheeses, fruits, vegetables, chilies or any preparation according to taste, and both the filling and the cooking liquid may be seasoned.</p>-->
+				<a href="#" class="class" id="mole"><span><h4>MOLE</h4></span></a>
+				<!--<p>Mole is the generic name for a number of sauces originally used in Mexican cuisine. The term is used for a number of sauces, some quite dissimilar, including black, red, yellow, colorado (another name for red), green, almendrado, de olla, huaxmole and pipián. Generally, a mole sauce contains a fruit, chili pepper, and nut.</p>-->
+				<a href="#" class="class" id="frijoles"><span><h4>FRIJOLES CHARROS</h4></span></a>
+				<!--<p>Frijoles charros (cowboy beans) is a traditional Mexican dish. It is named after the traditional Mexican cowboy horsemen, or charros. The dish is characterized by pinto beans stewed with onion, garlic, and bacon. Other common ingredients include chili peppers, tomatoes, cilantro, ham, sausage, pork and chorizo.</p>-->
+			</article>
+		</section>
+		<section id="freebieoffernormal">
+			<div class="emailform">
+				<h2>Get a free recipe book!</h2>
+				<form>
+					NAME: <input type="text" name="firstname" value="ENTER YOUR NAME">
+					<br/>
+					EMAIL: <input type="text" name="lastname" value="ENTER YOUR EMAIL">
+					<br/>
+					<input type="submit" value="I WANT AWESOME RECIPES!">
+				</form> 
+			</div>
+		</section>
+		<section class="grid" class="fade">
+			<h2>Happening Soon!</h2>
+			<p>Spots fill up fast, so sign up and get cooking.</p>
+			<article class="clear">
+				<a href="#" class="class" id="singleslunch"><span><h4>SINGLES LUNCH</h4></span></a>
+				<a href="#" class="class" id="momsnight"><span><h4>MOM'S NIGHT</h4></span></a>
+				<a href="#" class="class" id="littlechefs"><span><h4>LITTLE CHEFS</h4></span></a>
+				<a href="#" class="class" id="openkitchen"><span><h4>OPEN KITCHEN</h4></span></a>
+			</article>
+		</section>
+		<section id="aboutpreview">
+			<div class="homeabout">
+				<h3>Behind The Scenes</h3>
+				<p>It started with a few shots of tequila, friends, and a kitchen...</p>
+				<p>Having grown up with a family that revolved around the kitchen, it was only natural that Daniel's passion would be to teach others the love of Mexican food.</p>
+				<a href="#">Read more...</a>
+			</div>
+		</section>
+		<section id="freebieoffersmall">
+			<div class="emailform">
+				<h2>Free recipes that will make them drool!</h2>
+				<form>
+					NAME: <input type="text" name="firstname" value="ENTER YOUR NAME">
+					<br/>
+					EMAIL: <input type="text" name="lastname" value="ENTER YOUR EMAIL">
+					<br/>
+					<input type="submit" value="I WANT AWESOME RECIPES!">
+				</form> 
+			</div>
+</section>
+<footer id="two_column" class="clearfix">
+	<section id="left">
+		<p>For more information, or to book a corporate team bulding class, contact us at <a href="mailto:yrobles.1@go.ccad.edu" target="_top">yrobles.1@go.ccad.edu</a>
+	</section>
+	<section id="right">
+		<p>Mention this site and get 20% off your next class ;)</p>
+		<a href='#top' class="back-top">BACK TO TOP</a>
+	</section>
+</footer>
+</div>
+<script>
+  $(document).ready(function(){
+    $(".no-touchevents .sticky").sticky({topSpacing:0,zIndex:9999});
+    // Hide Header on on scroll down
+		var $scrollPast = $('header').height();  		
+		$(window).scroll(function(event){ 		   
+		var $windowPosition = $(window).scrollTop(); 		   
+		if ($windowPosition >= $scrollPast){ 		       
+		// downscroll code 		       
+		$('body').removeClass('nav-up').addClass('nav-down'); 		   
+		} else { 		      
+		// upscroll code 		      
+		$('body').removeClass('nav-down').addClass('nav-up'); 		   
+	} 		
+});
+  });
+</script>
+</body>
+</html>
