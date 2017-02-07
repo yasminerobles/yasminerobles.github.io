@@ -291,6 +291,7 @@ background: #FD5400;
 	padding: 0;
 	background-repeat: no-repeat;
 	background-attachment: fixed;
+<<<<<<< HEAD
 }
 .testimonial {
 	padding: 5em;
@@ -313,6 +314,8 @@ background: #FD5400;
 	padding-top: 20em;
 	padding-bottom: 20em;
 	background-attachment: fixed;
+=======
+>>>>>>> origin/master
 }
 #aboutpreview {
 	text-align: center;
@@ -323,6 +326,7 @@ background: #FD5400;
 	background-attachment: fixed;
 }
 .homeabout {
+<<<<<<< HEAD
 	background-color: rgba(0, 176, 163, 0.7);
 	padding: 10em 10em 10em 10em;
 	text-align: center;
@@ -337,10 +341,12 @@ background: #FD5400;
 	color:#fff;
 	width: 70%;
 	margin:auto;
+=======
 	background-color: rgba(104, 111, 253, 0.5);
 	padding: 15em 10% 15em 10%;
 	/* width: 70%; */
 	/* margin: auto; */
+>>>>>>> origin/master
 }
 #slogan {
 	font-style: italic;
@@ -535,6 +541,7 @@ background: #FD5400;
     	font-size: 2em;
     	padding: 35% 0 13% 0;
     }
+<<<<<<< HEAD
     form {
 		padding-left: 0px;
 		padding-right: 0px;
@@ -544,4 +551,6 @@ background: #FD5400;
 		line-height: 120%;
 	}
 } 
+=======
 } 
+>>>>>>> origin/master
