@@ -26,7 +26,7 @@ article {
 }
 footer {
 	background-color: #000;
-	padding: 15%;
+	padding: 3em;
 	color: #fff;
 }
 footer p {
@@ -103,6 +103,7 @@ img {
 	text-transform: uppercase;
 	font-family: 'Merriweather' 'Georgia', serif;
 	letter-spacing: 1px;
+	text-decoration: none;
 }
 .sticky {
 	background-color: #000;
@@ -111,8 +112,8 @@ img {
 	text-align: center;
 }
 .sticky {
-	transition-duration:.5s;
-/*	position:fixed;
+	transition-duration:.2s;
+	/*position:fixed;
 	top:-300px;
 	left:0; */
 	width: 100%;
@@ -324,21 +325,18 @@ background: #FD5400;
 }
 .homeabout {
 	background-color: rgba(0, 176, 163, 0.7);
-	padding: 10em 10em 10em 10em;
+	padding: 10em;
 	text-align: center;
 }
 .homeabout h2{
 	color:#fff;
 	width: 70%;
 	margin:auto;
-
 }
 .homeabout p{
 	color:#fff;
 	width: 70%;
 	margin:auto;
-	background-color: rgba(104, 111, 253, 0.5);
-	padding: 15em 10% 15em 10%;
 	/* width: 70%; */
 	/* margin: auto; */
 }
@@ -346,11 +344,11 @@ background: #FD5400;
 	font-style: italic;
 	text-transform: uppercase;
 }
-#two_column {
-    border: 1px black solid;
-    padding: 20px;
+#two_column section{
+    float: left;
+    width: 50%;
 }
-#left {
+/*#left {
     border: 1px black solid;
     padding: 20px;
     float: left;
@@ -361,7 +359,7 @@ background: #FD5400;
     padding: 20px;
     float: right;
     width: 50%;
-}
+}*/
 .clearfix:after {
     visibility: hidden;
     display: block;
@@ -372,7 +370,7 @@ background: #FD5400;
 }
 @media screen and (max-width: 1000px) {
     .homeabout {
-    	padding: 5em 0em 5em 0em;
+    	padding: 5em 0 5em 0;
     }
     #foodimage {
 		text-align: center;
@@ -448,6 +446,9 @@ background: #FD5400;
 @media screen and (max-width: 500px) {
 	#specialnav {
     	width: 100%;
+    }
+    .sticky :not(nth-child(3)){
+    	display: none;
     }
     .class {
     	width: 100%;
