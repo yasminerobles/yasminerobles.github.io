@@ -1,0 +1,207 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i');
+* { 
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+h1 {
+	font-size: 6em;
+	font-weight: 800;
+	font-family: 'Open Sans', sans-serif;
+	display: block;
+}
+h2 {
+	font-size: 3.5em;
+	font-weight: 800;
+	font-family: 'Open Sans', sans-serif;
+}
+h3 {
+	font-size: 2em;
+	font-weight: 800;
+	font-family: 'Open Sans', sans-serif;
+}
+p {
+	font-size: 1em;
+	font-family: 'Open Sans', sans-serif;
+}
+header {
+	height: 100px;
+	background: rgba(0,0,0,1);
+	background: -moz-linear-gradient(top, rgba(0,0,0,1) 0%, rgba(255,255,255,1) 100%);
+	background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(0,0,0,1)), color-stop(100%, rgba(255,255,255,1)));
+	background: -webkit-linear-gradient(top, rgba(0,0,0,1) 0%, rgba(255,255,255,1) 100%);
+	background: -o-linear-gradient(top, rgba(0,0,0,1) 0%, rgba(255,255,255,1) 100%);
+	background: -ms-linear-gradient(top, rgba(0,0,0,1) 0%, rgba(255,255,255,1) 100%);
+	background: linear-gradient(to bottom, rgba(0,0,0,1) 0%, rgba(255,255,255,1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#ffffff', GradientType=0 );
+}
+nav {
+	text-align: center;
+	width: 100%;
+}
+li {
+	list-style-type: none;
+	padding: 2em 3em 2em 3em;
+	display:inline-block;
+}
+aside {
+	width: 35%;
+	float: left;
+	padding: 3em 0 3em 0;
+}
+blockquote {
+	width: 70%;
+	text-align: center;
+	margin: auto;
+}
+q {
+	font-size: 1.5em;
+	font-family: 'Open Sans', sans-serif;
+}
+cite {
+	display:block;
+	font-size: 1em;
+	font-family: 'Open Sans', sans-serif;
+}
+article {
+	margin: auto;
+}
+form {
+	margin: auto;
+}
+input {
+	width: 70%;
+	text-align: center;
+	padding: .5em 0 .5em 0;
+	margin-bottom: 1em;
+	font-size: 1em;
+}
+hr {
+	width: 50%;
+	margin: auto;
+}
+.mainimage {
+	background-image: url(../images/hc-styled-stock-lifestyle-photoshoot-cozy-workday-27-final.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+    background-attachment: fixed;
+    padding: 10em 0 10em 0;
+}
+.mainimage h1 {
+	margin-bottom: .25em;
+}
+.highlight {
+	background-color: #FFF;
+	padding: 0 .25em 0 .25em; 
+}
+#episodeheadline {
+	margin: auto;
+	text-align: center;
+	padding-top: .5em;
+}
+.episodetitle {
+	text-align: center;
+	padding-bottom: .5em;
+}
+.freebie {
+	text-align: center;
+	width: 70%;
+	margin: auto;
+	padding: 3em 0 3em 0;
+}
+.freebie h3 {
+	padding-bottom: .5em;
+}
+.featuredin {
+	padding: 4em 0 4em 0;
+	margin: auto;
+	text-align: center;
+}
+.featuredin img {
+	padding: 0 1em 0 1em;
+}
+.featuredin h3 {
+	padding-bottom: .5em;
+}
+.episode {
+	width: 24%;
+	display:inline-block;
+	padding: 0 1% 0 1%;
+	margin-top: 2em;
+}
+.about {
+	width: 65%;
+	float: left;
+	padding: 3em 0 3em 0;
+}
+/* TAKEN FROM http://codepen.io/erikdkennedy/pen/ygpwZg */
+blockquote {
+  position: relative;
+  height: 35em;
+  background-image: linear-gradient(#000, #000);
+}
+
+q {
+  padding: 100px 0;
+  font: 44px "Arial";
+  text-align: center;
+}
+
+blockquote q {
+  color: white;
+}
+
+svg {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+}
+/*Taken from http://codepen.io/ahmadnassri/pen/gLJZoW?editors=1100 */
+:/*root {
+  --width: 300px;
+  --height: 100px;
+  --top-color: #f44336;
+  --bottom-color: #2196F3;
+}
+
+@function str-replace($string, $search, $replace: '') {
+  $index: str-index($string, $search);
+  
+  @if $index {
+    @return str-slice($string, 1, $index - 1) + $replace + str-replace(str-slice($string, $index + str-length($search)), $search, $replace);
+  }
+  
+  @return $string;
+}
+
+@mixin svg ($from, $to, $reverse: false, $height: 100px, $width: 100%) {
+  $polygons: '<polygon fill="#{$from}" points="0 100 0 0 100 0"/><polygon fill="#{$to}" points="100 0 100 100 0 100"/>';
+
+  @if $reverse == true {
+    $polygons: '<polygon fill="#{$from}" points="0 0 100 0 100 100"/><polygon fill="#{$to}" points="0 0 0 100 100 100"/>';
+  }
+  
+  $svg: '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="none">#{$polygons}</svg>';
+
+  $svg: str-replace($svg, '#', '%23');
+  $svg: str-replace($svg, '<', '%3C');
+  $svg: str-replace($svg, '>', '%3E');
+
+  width: var(--width);
+  height: var(--height);
+  background-image: url('data:image/svg+xml,#{$svg}');
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+.separator {
+  $top-color: #000;
+  $bottom-color: #FFF;
+  
+  @include svg($top-color, $bottom-color);
+  
+  &.reverse {
+    @include svg($top-color, $bottom-color, true);
+  }
+}*/
