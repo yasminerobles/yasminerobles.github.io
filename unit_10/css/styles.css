@@ -50,12 +50,14 @@ aside {
 	padding: 3em 0 3em 0;
 }
 blockquote {
-	width: 70%;
-	text-align: center;
-	margin: auto;
+	position: relative;
+  	clear:both;
 }
 q {
 	font-size: 1.5em;
+	width: 70%;
+	text-align: center;
+	margin: auto;
 	font-family: 'Open Sans', sans-serif;
 }
 cite {
@@ -65,9 +67,11 @@ cite {
 }
 article {
 	margin: auto;
+	padding: 4em 0;
 }
 form {
 	margin: auto;
+	width: 70%;
 }
 input {
 	width: 70%;
@@ -80,12 +84,36 @@ hr {
 	width: 50%;
 	margin: auto;
 }
-.mainimage {
+nav a {
+	text-decoration: none;
+	font-weight: 600;
+	font-family: 'Open Sans', sans-serif;
+	color: #000;
+}
+nav a:hover {
+	color: #ca232d;
+}
+footer {
+	background-color: #000;
+	color: #FFF;
+	padding: 4em 0 4em 0;
+}
+footer a{
+	color:#FFF;
+}
+a {
+	font-weight: 600;
+	font-family: 'Open Sans', sans-serif;
+}
+.hphero {
 	background-image: url(../images/hc-styled-stock-lifestyle-photoshoot-cozy-workday-27-final.jpg);
 	background-size: cover;
 	background-repeat: no-repeat;
     background-attachment: fixed;
-    padding: 10em 0 10em 0;
+    padding: 1em 0 45em 0;
+}
+.mainimage {
+	padding-top: 8em;
 }
 .mainimage h1 {
 	margin-bottom: .25em;
@@ -93,6 +121,21 @@ hr {
 .highlight {
 	background-color: #FFF;
 	padding: 0 .25em 0 .25em; 
+}
+.mainimage h2 {
+	margin-bottom: 1em;
+}
+.mainimage a{
+	background-color: #000;
+	color: #FFF;
+	padding: 2em 2em 2em 2em;
+	margin-top: 5em;
+	font-weight: 800;
+	font-family: 'Open Sans', sans-serif;
+}
+.mainimage a:hover {
+	background-color: #ca232d;
+	color: #FFF;
 }
 #episodeheadline {
 	margin: auto;
@@ -105,12 +148,22 @@ hr {
 }
 .freebie {
 	text-align: center;
-	width: 70%;
+	width: 100%;
 	margin: auto;
+	background-color: #000;
 	padding: 3em 0 3em 0;
 }
 .freebie h3 {
 	padding-bottom: .5em;
+	color: #FFF;
+}
+.freebie p {
+	color: #FFF;
+	font-size: 1.25em;
+	padding-bottom: 1em;
+}
+svg {
+	width: 100%;
 }
 .featuredin {
 	padding: 4em 0 4em 0;
@@ -126,82 +179,15 @@ hr {
 .episode {
 	width: 24%;
 	display:inline-block;
-	padding: 0 1% 0 1%;
+	padding: 0 2% 0 2%;
+	/*margin: 0 1.5em 0 1.5em;*/
 	margin-top: 2em;
+}
+#hpabout {
+	margin: 5em 1.5em 5em 1.5em;
 }
 .about {
 	width: 65%;
 	float: left;
-	padding: 3em 0 3em 0;
+	padding: 3em 3em 3em 0;
 }
-/* TAKEN FROM http://codepen.io/erikdkennedy/pen/ygpwZg */
-blockquote {
-  position: relative;
-  height: 35em;
-  background-image: linear-gradient(#000, #000);
-}
-
-q {
-  padding: 100px 0;
-  font: 44px "Arial";
-  text-align: center;
-}
-
-blockquote q {
-  color: white;
-}
-
-svg {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  height: 100%;
-}
-/*Taken from http://codepen.io/ahmadnassri/pen/gLJZoW?editors=1100 */
-:/*root {
-  --width: 300px;
-  --height: 100px;
-  --top-color: #f44336;
-  --bottom-color: #2196F3;
-}
-
-@function str-replace($string, $search, $replace: '') {
-  $index: str-index($string, $search);
-  
-  @if $index {
-    @return str-slice($string, 1, $index - 1) + $replace + str-replace(str-slice($string, $index + str-length($search)), $search, $replace);
-  }
-  
-  @return $string;
-}
-
-@mixin svg ($from, $to, $reverse: false, $height: 100px, $width: 100%) {
-  $polygons: '<polygon fill="#{$from}" points="0 100 0 0 100 0"/><polygon fill="#{$to}" points="100 0 100 100 0 100"/>';
-
-  @if $reverse == true {
-    $polygons: '<polygon fill="#{$from}" points="0 0 100 0 100 100"/><polygon fill="#{$to}" points="0 0 0 100 100 100"/>';
-  }
-  
-  $svg: '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="none">#{$polygons}</svg>';
-
-  $svg: str-replace($svg, '#', '%23');
-  $svg: str-replace($svg, '<', '%3C');
-  $svg: str-replace($svg, '>', '%3E');
-
-  width: var(--width);
-  height: var(--height);
-  background-image: url('data:image/svg+xml,#{$svg}');
-  background-repeat: no-repeat;
-  background-size: 100% 100%;
-}
-
-.separator {
-  $top-color: #000;
-  $bottom-color: #FFF;
-  
-  @include svg($top-color, $bottom-color);
-  
-  &.reverse {
-    @include svg($top-color, $bottom-color, true);
-  }
-}*/
