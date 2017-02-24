@@ -20,6 +20,11 @@ h3 {
 	font-weight: 800;
 	font-family: 'Open Sans', sans-serif;
 }
+h4 {
+	font-size: 1em;
+	font-weight: 800;
+	font-family: 'Open Sans', sans-serif;
+}
 p {
 	font-size: 1em;
 	font-family: 'Open Sans', sans-serif;
@@ -52,6 +57,9 @@ aside {
 blockquote {
 	position: relative;
   	clear:both;
+  	width: 70%;
+  	margin: auto;
+  	padding: 4em 0 4em 0;
 }
 q {
 	font-size: 1.5em;
@@ -64,6 +72,7 @@ cite {
 	display:block;
 	font-size: 1em;
 	font-family: 'Open Sans', sans-serif;
+	padding-top: 1em;
 }
 article {
 	margin: auto;
@@ -97,6 +106,10 @@ footer {
 	background-color: #000;
 	color: #FFF;
 	padding: 4em 0 4em 0;
+	text-align: center;
+}
+footer p {
+	padding:.5em;
 }
 footer a{
 	color:#FFF;
@@ -104,16 +117,18 @@ footer a{
 a {
 	font-weight: 600;
 	font-family: 'Open Sans', sans-serif;
+	color: #ca232d;
 }
 .hphero {
 	background-image: url(../images/hc-styled-stock-lifestyle-photoshoot-cozy-workday-27-final.jpg);
 	background-size: cover;
 	background-repeat: no-repeat;
     background-attachment: fixed;
-    padding: 1em 0 45em 0;
+    padding: 1em 0 43em 0;
 }
 .mainimage {
 	padding-top: 8em;
+	padding-bottom: 2em;
 }
 .mainimage h1 {
 	margin-bottom: .25em;
@@ -136,6 +151,9 @@ a {
 .mainimage a:hover {
 	background-color: #ca232d;
 	color: #FFF;
+}
+.headersvg {
+
 }
 #episodeheadline {
 	margin: auto;
@@ -184,10 +202,34 @@ svg {
 	margin-top: 2em;
 }
 #hpabout {
-	margin: 5em 1.5em 5em 1.5em;
+	margin: 4em 1.5em 5em 1.5em;
 }
 .about {
 	width: 65%;
 	float: left;
 	padding: 3em 3em 3em 0;
+}
+.eventdivider {
+	margin: .5em 0;
+	color: #000;
+
+}
+.button {
+	background-color: #FFF;
+	font-size: 1.5em;
+	border: none;
+	margin-top: 1em;
+}
+.button:hover {
+	background-color: #ca232d;
+	font-size: 1.5em;
+	border: none;
+	margin-top: 1em;
+}
+.pagedivider {
+	color: #ca232d;
+	background-color: #ca232d;
+	width: 70%;
+	margin: 4em auto;
+	height: 5px;
 }
