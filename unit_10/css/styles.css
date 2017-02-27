@@ -164,6 +164,10 @@ a {
 	text-align: center;
 	padding-bottom: .5em;
 }
+.episode img {
+	width: 100%;
+	text-align: center;
+}
 .freebie {
 	text-align: center;
 	width: 100%;
@@ -232,4 +236,65 @@ svg {
 	width: 70%;
 	margin: 4em auto;
 	height: 5px;
+}
+@media screen and (max-width: 900px) {
+	h1 {
+	font-size: 5em;
+	}
+	h2 {
+	font-size: 3em;
+	}
+	h3 {
+	font-size: 1.5em;
+	}
+	nav {
+	background-color: #FFF;
+	}
+	li {
+	padding: 1em 2em 1em 2em;
+	display: block;
+	}
+	nav a {
+	display: block;
+	font-weight: 800;
+	}
+	form {
+	width: 100%;
+	}
+	input {
+	width: 90%;
+	}
+	.about {
+	width: 100%;
+	margin: auto;
+	padding: 3em 0em 3em 0;
+	}
+	aside {
+	width: 100%;
+	margin: auto;
+	padding: 3em 0 3em 0;
+	}
+	.episode {
+	width: 49%;
+	}
+	.mainimage {
+	padding-top: 8em;
+	padding-bottom: 2em;
+	}
+}
+@media screen and (max-width: 700px) {
+	.episode {
+	width: 100%;
+	display:block;
+	}
+}
+@media screen and (max-width: 400px) {
+	.featuredin img {
+	display: block;
+	padding: 1em 0;
+	margin: auto;
+	}
+	.mainimage a{
+	padding: 1em;
+	}
 }
