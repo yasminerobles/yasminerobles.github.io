@@ -16,8 +16,9 @@ h2 {
 	font-family: 'Open Sans', sans-serif;
 }
 h3 {
-	font-size: 2em;
+	font-size: 1.5em;
 	font-weight: 800;
+	line-height: 110%;
 	font-family: 'Open Sans', sans-serif;
 }
 h4 {
@@ -30,40 +31,38 @@ p {
 	font-family: 'Open Sans', sans-serif;
 }
 header {
-	height: 100px;
 	background: rgba(0,0,0,1);
-	background: -moz-linear-gradient(top, rgba(0,0,0,1) 0%, rgba(255,255,255,1) 100%);
-	background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(0,0,0,1)), color-stop(100%, rgba(255,255,255,1)));
-	background: -webkit-linear-gradient(top, rgba(0,0,0,1) 0%, rgba(255,255,255,1) 100%);
-	background: -o-linear-gradient(top, rgba(0,0,0,1) 0%, rgba(255,255,255,1) 100%);
-	background: -ms-linear-gradient(top, rgba(0,0,0,1) 0%, rgba(255,255,255,1) 100%);
-	background: linear-gradient(to bottom, rgba(0,0,0,1) 0%, rgba(255,255,255,1) 100%);
+	background: -moz-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(255,255,255,0) 100%);
+	background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(0,0,0,0)), color-stop(100%, rgba(255,255,255,1)));
+	background: -webkit-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(255,255,255,0) 100%);
+	background: -o-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(255,255,255,0) 100%);
+	background: -ms-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(255,255,255,0) 100%);
+	background: linear-gradient(to bottom, rgba(255,255,255,1) 0%, rgba(255,255,255,0) 100%);
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#ffffff', GradientType=0 );
+	padding: 3em;
+	float:left;
+	width: 100%;
+	margin-bottom: 4em;
 }
 nav {
 	text-align: center;
-	width: 100%;
-}
-li {
-	list-style-type: none;
-	padding: 2em 3em 2em 3em;
-	display:inline-block;
 }
 aside {
 	width: 35%;
-	float: left;
-	padding: 3em 0 3em 0;
+	float: right;
+	/*padding: 3em 0 3em 0;*/
+	max-width: 400px;
 }
 blockquote {
 	position: relative;
   	clear:both;
-  	width: 70%;
+  	max-width: 500px;
+  	width: 80%;
   	margin: auto;
   	padding: 4em 0 4em 0;
 }
 q {
 	font-size: 1.5em;
-	width: 70%;
 	text-align: center;
 	margin: auto;
 	font-family: 'Open Sans', sans-serif;
@@ -76,7 +75,7 @@ cite {
 }
 article {
 	margin: auto;
-	padding: 4em 0;
+	max-width: 1000px;
 }
 form {
 	margin: auto;
@@ -90,7 +89,7 @@ input {
 	font-size: 1em;
 }
 hr {
-	width: 50%;
+	max-width: 1000px;
 	margin: auto;
 }
 nav a {
@@ -98,6 +97,7 @@ nav a {
 	font-weight: 600;
 	font-family: 'Open Sans', sans-serif;
 	color: #000;
+	padding: 2em;
 }
 nav a:hover {
 	color: #ca232d;
@@ -119,16 +119,17 @@ a {
 	font-family: 'Open Sans', sans-serif;
 	color: #ca232d;
 }
-.hphero {
+.clearfix {
+	clear: both;
+	display: block;
+	width: 100%;
+}
+.mainimage {
 	background-image: url(../images/hc-styled-stock-lifestyle-photoshoot-cozy-workday-27-final.jpg);
 	background-size: cover;
 	background-repeat: no-repeat;
     background-attachment: fixed;
-    padding: 1em 0 43em 0;
-}
-.mainimage {
-	padding-top: 8em;
-	padding-bottom: 2em;
+	padding: 10em 0 15em 0;
 }
 .mainimage h1 {
 	margin-bottom: .25em;
@@ -153,20 +154,28 @@ a {
 	color: #FFF;
 }
 .headersvg {
-
+	margin-top:-200px;
+	width: 100%;
 }
 #episodeheadline {
 	margin: auto;
 	text-align: center;
 	padding-top: .5em;
+	padding-bottom: .5em;
 }
 .episodetitle {
 	text-align: center;
 	padding-bottom: .5em;
+	padding-top: .5em;
 }
 .episode img {
 	width: 100%;
 	text-align: center;
+}
+.episode {
+	float:left;
+	padding: 0 1em 0 1em;
+	max-width: 25%;
 }
 .freebie {
 	text-align: center;
@@ -175,9 +184,11 @@ a {
 	background-color: #000;
 	padding: 3em 0 3em 0;
 }
-.freebie h3 {
+.freebie h2 {
 	padding-bottom: .5em;
 	color: #FFF;
+	max-width: 700px;
+	margin: auto;
 }
 .freebie p {
 	color: #FFF;
@@ -187,36 +198,37 @@ a {
 svg {
 	width: 100%;
 }
+.svgtop {
+	margin-bottom:-4px;
+}
 .featuredin {
-	padding: 4em 0 4em 0;
 	margin: auto;
+	padding-bottom: 4em;
 	text-align: center;
 }
 .featuredin img {
 	padding: 0 1em 0 1em;
 }
-.featuredin h3 {
+.featuredin h2 {
 	padding-bottom: .5em;
 }
-.episode {
-	width: 24%;
-	display:inline-block;
-	padding: 0 2% 0 2%;
-	/*margin: 0 1.5em 0 1.5em;*/
-	margin-top: 2em;
-}
 #hpabout {
-	margin: 4em 1.5em 5em 1.5em;
+	margin: 5em auto;
+	max-width: 1000px;
 }
 .about {
-	width: 65%;
 	float: left;
-	padding: 3em 3em 3em 0;
+	width: 65%;
+	/*padding: 3em 3em 3em 0;*/
+	max-width: 600px;
+}
+.about img {
+	width: 100%;
+	padding-bottom: 1em;
 }
 .eventdivider {
 	margin: .5em 0;
 	color: #000;
-
 }
 .button {
 	background-color: #FFF;
@@ -233,68 +245,92 @@ svg {
 .pagedivider {
 	color: #ca232d;
 	background-color: #ca232d;
-	width: 70%;
-	margin: 4em auto;
+	margin: 0 auto;
 	height: 5px;
+	max-width: 1000px;
+	clear: both;
 }
-@media screen and (max-width: 900px) {
-	h1 {
-	font-size: 5em;
-	}
-	h2 {
-	font-size: 3em;
-	}
-	h3 {
-	font-size: 1.5em;
-	}
+.readmore {
+	margin: 2em;
+}
+@media screen and (max-width: 1000px) {
 	nav {
 	background-color: #FFF;
-	}
-	li {
-	padding: 1em 2em 1em 2em;
-	display: block;
 	}
 	nav a {
 	display: block;
 	font-weight: 800;
 	}
-	form {
-	width: 100%;
-	}
-	input {
-	width: 90%;
+	#hpabout{
+		width: 90%;
 	}
 	.about {
-	width: 100%;
-	margin: auto;
-	padding: 3em 0em 3em 0;
-	}
-	aside {
-	width: 100%;
-	margin: auto;
-	padding: 3em 0 3em 0;
+		width: 60%;
 	}
 	.episode {
-	width: 49%;
+		max-width: 50%;
+		padding:2em;
 	}
-	.mainimage {
-	padding-top: 8em;
-	padding-bottom: 2em;
+	.pagedivider {
+		max-width: 900px;
 	}
 }
 @media screen and (max-width: 700px) {
 	.episode {
-	width: 100%;
-	display:block;
+		width: 100%;
+		display:block;
+	}
+	.featuredin img {
+		padding: 1em;
+		margin: auto;
+	}
+	.pagedivider {
+		max-width: 600px;
+	}
+	.about {
+		width:100%;
+		margin: auto;
+		display: block;
+	}
+	aside {
+		width: 100%;
+		margin: auto;
+		display: block;
+		clear: both;
+		padding-top: 2em;
+		max-width: 100%;
+	}
+	form {
+		margin: auto;
+		width: 100%;
 	}
 }
-@media screen and (max-width: 400px) {
-	.featuredin img {
-	display: block;
-	padding: 1em 0;
-	margin: auto;
-	}
+@media screen and (max-width: 460px) {
 	.mainimage a{
 	padding: 1em;
+	}
+	.featuredin img {
+	display: block;
+	}
+	.episode {
+		max-width: 100%;
+		padding:2em;
+	}
+	h1 {
+		font-size:4em;
+	}
+	h2 {
+		font-size: 2em;
+	}
+	.freebie h2 {
+		padding: 0 1em 0 1em;
+		line-height: 110%;
+	}
+	.freebie p {
+		padding: 1em;
+		line-height: 110%;
+	}
+	input {
+		width: 90%;
 	}
 }
