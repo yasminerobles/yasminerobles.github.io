@@ -6,13 +6,14 @@
 </head>
 <body>
 	<header>
-		<nav>
-			<a href="">HOME</a>
+		<nav class="topnav" id="myTopnav">
+			<a class="active" href="">HOME</a>
 			<a href="">PODCAST</a>
 			<a href="">EVENTS</a>
 			<a href="">FREE RESOURCES</a>
 			<a href="">ABOUT</a>
 			<a href="">CONTACT</a>
+			<a class="icon" href="javascript:void(0);" style="font-size:15px;" onclick="myFunction()">☰</a>
 		</nav>
 	</header>
 	<section class="mainimage">
@@ -90,11 +91,11 @@
 		</div>
 	</article>
 	<hr class="pagedivider" size="30">
-	<div id="hpabout" class="clearfix">
+	<div id="hpabout" >
 		<section class="about">
 			<h2>HOW IT ALL STARTED...</h2>
 			<img src="images/haute-chocolate-styled-stock-photography-lady-boss-glam-76-final.jpg">
-			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			<p >Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
 			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
 			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
@@ -152,5 +153,15 @@
 		<p>Copyright 2016 | Created by <a href="">RoblesDesigns.com</a></p>
 		<p>It's boring down here, let's go back to top!</p>
 	</footer>
+	<script>
+function myFunction() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") {
+        x.className += " responsive";
+    } else {
+        x.className = "topnav";
+    }
+}
+</script>
 </body>
 </html>

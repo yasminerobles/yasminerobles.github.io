@@ -76,6 +76,7 @@ cite {
 article {
 	margin: auto;
 	max-width: 1000px;
+	padding-bottom: 8em;
 }
 form {
 	margin: auto;
@@ -119,10 +120,11 @@ a {
 	font-family: 'Open Sans', sans-serif;
 	color: #ca232d;
 }
-.clearfix {
-	clear: both;
+
+.clearfix:after {
+	content:"";
 	display: block;
-	width: 100%;
+	clear: both;
 }
 .mainimage {
 	background-image: url(../images/hc-styled-stock-lifestyle-photoshoot-cozy-workday-27-final.jpg);
@@ -231,13 +233,15 @@ svg {
 	color: #000;
 }
 .button {
-	background-color: #FFF;
+	background-color: #ca232d;
+	color: #FFF;
 	font-size: 1.5em;
 	border: none;
 	margin-top: 1em;
 }
 .button:hover {
-	background-color: #ca232d;
+	background-color: #FFF;
+	color: #000;
 	font-size: 1.5em;
 	border: none;
 	margin-top: 1em;
@@ -251,14 +255,20 @@ svg {
 	clear: both;
 }
 .readmore {
-	margin: 2em;
+	margin-top: 2em;
+}
+nav.topnav a.icon {
+	display: none;
 }
 @media screen and (max-width: 1000px) {
+	header {
+		padding: 0;
+	}
 	nav {
 	background-color: #FFF;
 	}
 	nav a {
-	display: block;
+	display: inline-block;
 	font-weight: 800;
 	}
 	#hpabout{
@@ -274,6 +284,36 @@ svg {
 	.pagedivider {
 		max-width: 900px;
 	}
+}
+@media screen and (max-width:900px) {
+  nav.topnav a:not(:first-child) {
+  	display: none;
+  }
+  nav.topnav a.icon {
+    float: right;
+    display: inline-block;
+  }
+  nav{
+  	text-align: left;
+  }
+}
+@media screen and (max-width:900px) {
+  nav.topnav.responsive {
+  	position: relative;
+  }
+  nav.topnav.responsive a.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  nav.topnav.responsive a {
+    float: none;
+    display: inline;
+  }
+  nav.topnav.responsive a {
+    display: block;
+    text-align: left;
+  }
 }
 @media screen and (max-width: 700px) {
 	.episode {
